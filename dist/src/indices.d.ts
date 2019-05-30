@@ -1,4 +1,4 @@
-import { Client, IndicesCreateParams, IndicesPutMappingParams, IndicesExistsParams } from 'elasticsearch';
+import { Client, IndicesCreateParams, IndicesPutMappingParams, IndicesExistsParams } from '@eventology/elasticsearch';
 import { Config } from './config';
 export default class Indices {
     static client: Client;

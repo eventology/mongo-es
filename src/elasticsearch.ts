@@ -1,4 +1,4 @@
-import { Client, BulkIndexDocumentsParams } from 'elasticsearch'
+import { Client, BulkIndexDocumentsParams } from '@eventology/elasticsearch'
 import * as _ from 'lodash'
 
 import { ESDoc } from './types'

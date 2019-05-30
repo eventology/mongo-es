@@ -3,7 +3,7 @@ import {
   IndicesCreateParams,
   IndicesPutMappingParams,
   IndicesExistsParams,
-} from 'elasticsearch'
+} from '@eventology/elasticsearch'
 
 import { Config, ElasticsearchConfig, Task } from './config'
 

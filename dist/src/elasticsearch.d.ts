@@ -1,4 +1,4 @@
-import { Client, BulkIndexDocumentsParams } from 'elasticsearch';
+import { Client, BulkIndexDocumentsParams } from '@eventology/elasticsearch';
 import { ESDoc } from './types';
 import { ElasticsearchConfig, Task } from './config';
 export default class Elasticsearch {

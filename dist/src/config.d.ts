@@ -1,5 +1,5 @@
 import { ObjectID, MongoClientOptions } from 'mongodb';
-import { ConfigOptions, IndicesCreateParams, IndicesPutMappingParams } from 'elasticsearch';
+import { ConfigOptions, IndicesCreateParams, IndicesPutMappingParams } from '@eventology/elasticsearch';
 export declare class MongoConfig {
     url: string;
     options?: MongoClientOptions;

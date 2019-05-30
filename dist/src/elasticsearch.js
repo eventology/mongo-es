@@ -8,7 +8,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const elasticsearch_1 = require("elasticsearch");
+const elasticsearch_1 = require("@eventology/elasticsearch");
 const _ = require("lodash");
 class Elasticsearch {
     constructor(elasticsearch, task) {
