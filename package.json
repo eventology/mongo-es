@@ -6,7 +6,7 @@
     "url": "https://github.com/eventology/mongo-es/issues"
   },
   "dependencies": {
-    "@eventology/elasticsearch": "15.1.1",
+    "@eventology/elasticsearch": "1.0.2",
     "lodash": "4.17.10",
     "mongodb": "3.1.1",
     "rx": "4.1.0"
