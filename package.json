@@ -1,0 +1,45 @@
+{
+  "bin": {
+    "mongo-es": "dist/src/main.js"
+  },
+  "bugs": {
+    "url": "https://github.com/eventology/mongo-es/issues"
+  },
+  "dependencies": {
+    "@eventology/elasticsearch": "15.1.1",
+    "lodash": "4.17.10",
+    "mongodb": "3.1.1",
+    "rx": "4.1.0"
+  },
+  "description": "A Clone of A MongoDB to Elasticsearch connector",
+  "devDependencies": {
+    "@types/elasticsearch": "5.0.25",
+    "@types/lodash": "4.14.112",
+    "@types/mongodb": "3.1.2",
+    "@types/rx": "4.1.1",
+    "ava": "0.25.0",
+    "nodemon": "1.18.3",
+    "prettier": "1.13.7",
+    "source-map-support": "0.5.6",
+    "typescript": "2.9.2"
+  },
+  "homepage": "https://github.com/eventology/mongo-es#readme",
+  "keywords": [
+    "mongodb",
+    "elasticsearch",
+    "connector",
+    "etl"
+  ],
+  "main": "dist/src/index.js",
+  "name": "@eventology/mongo-es",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eventology/mongo-es.git"
+  },
+  "scripts": {
+    "test": "npm run compile && ava dist/test"
+  },
+  "types": "dist/src/index.d.ts",
+  "typings": "dist/src/index.d.ts",
+  "version": "1.0.0"
+}
