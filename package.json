@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "@eventology/elasticsearch": "1.0.2",
-    "lodash": "4.17.10",
+    "lodash": "^4.17.11",
     "mongodb": "3.1.1",
     "rx": "4.1.0"
   },
@@ -17,7 +17,7 @@
     "@types/lodash": "4.14.112",
     "@types/mongodb": "3.1.2",
     "@types/rx": "4.1.1",
-    "ava": "0.25.0",
+    "ava": "^2.1.0",
     "nodemon": "1.18.3",
     "prettier": "1.13.7",
     "source-map-support": "0.5.6",
@@ -37,7 +37,15 @@
     "url": "git+https://github.com/eventology/mongo-es.git"
   },
   "scripts": {
-    "test": "npm run compile && ava dist/test"
+    "test": "npm run compile && ava dist/test",
+    "start": "node dist/src/main.js",
+    "compile": "tsc",
+    "build": "npm run clean && npm run compile",
+    "dev": "npm run clean && tsc -w & NODE_ENV=dev nodemon dist/src/main.js",
+    "clean": "rm -rf dist",
+    "purge": "rm -rf package-lock.json node_modules && npm run clean",
+    "prettier": "prettier --config .prettierrc --write '**/*'",
+    "prepublishOnly": "npm run build"
   },
   "types": "dist/src/index.d.ts",
   "typings": "dist/src/index.d.ts",

@@ -1,4 +1,3 @@
-/// <reference types="node" />
 /// <reference types="rx-core" />
 /// <reference types="rx-core-binding" />
 /// <reference types="rx-lite" />

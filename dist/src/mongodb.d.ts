@@ -1,4 +1,3 @@
-/// <reference types="node" />
 import { Readable } from 'stream';
 import { Cursor, ObjectID, Collection } from 'mongodb';
 import { MongoDoc } from './types';
